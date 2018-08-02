@@ -113,7 +113,7 @@ gulp.task("build", function(done) {
     "style",
     "compress",
     "images",
-    // "webp",
+    "webp",
     // "sprite",
     "html",
      done
