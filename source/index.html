@@ -95,11 +95,13 @@
         </div>
       </section>
       <section class="banner-counter">
-        <p class="banner-counter__title-big">I GOT 99 PROBLEMS</p>
-        <p class="banner-counter__title-small">BUT DESIGN ‘AINT ONE</p>
-        <button class="banner-counter__toggle toggle" type="button"><span class="toggle__down"></span></button>
+        <div class="banner-counter__wrapper container">
+          <p class="banner-counter__title-big">I GOT 99 PROBLEMS</p>
+          <p class="banner-counter__title-small">BUT<b class="banner-counter__title-separate">DESIGN</b>‘AINT ONE</p>
+          <button class="banner-counter__toggle toggle" type="button"><span class="toggle__down"></span></button>
+        </div>
       </section>
-      <section class="portfolio">
+      <section class="portfolio container">
         <h2 class="visually-hidden">Our work</h2>
         <ul class="portfolio__list">
           <li class="portfolio__item">
@@ -130,15 +132,19 @@
         </div>
       </section>
       <section class="banner-ignite">
-        <p class="banner-ignite__title">IGNITE YOUR PASSION</p>
+        <div class="container">
+          <p class="banner-ignite__title">IGNITE YOUR PASSION</p>
+        </div>
       </section>
-      <section class="team">
+      <section class="team container">
         <h2 class="visually-hidden">Our team</h2>
         <p class="team__slogan slogan">WE’RE A TEAM THAT ADORE WHAT WE DO</p>
         <div class="team__arrow arrow"></div>
-        <ul class="team_list">
+        <ul class="team__list">
           <li class="team__item">
-            <img src="img/jonsnow.png" width="202" height="220" alt="Jon Snow">
+            <p class="team__avatar">
+              <img src="img/jonsnow.png" width="202" height="220" alt="Jon Snow">
+            </p>
             <p class="team__item-person">Jon Snow</p>
             <p class="team__item-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non
               adipiscing libero.
@@ -168,7 +174,9 @@
             </ul>
           </li>
           <li class="team__item">
-            <img src="img/cersei.png" width="202" height="220" alt="Cersei Lannister">
+            <p class="team__avatar">
+              <img src="img/cersei.png" width="202" height="220" alt="Cersei Lannister">
+            </p>
             <p class="team__item-person">Cersei Lannister</p>
             <p class="team__item-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non
               adipiscing libero.
@@ -198,7 +206,9 @@
             </ul>
           </li>
           <li class="team__item">
-            <img src="img/jamie.png" width="202" height="220" alt="Jamie Lannister">
+            <p class="team__avatar">
+              <img src="img/jamie.png" width="202" height="220" alt="Jamie Lannister">
+            </p>
             <p class="team__item-person">Jamie Lannister</p>
             <p class="team__item-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non
               adipiscing libero.
@@ -237,13 +247,15 @@
         </div>
       </section>
       <section class="subscription">
-        <h2 class="visually-hidden">Subscribe form</h2>
-        <p class="subscription__title">SUBSCRIBE TO STAY IN THE LOOP</p>
-        <form action="get" class="subscription__form">
-          <input class="subscription__mail" type="email" name="email" id="email-id">
-          <button class="subscription__btn" type="submit">Send</button>
-        </form>
-        <button class="subscription__toggle toggle toggle" type="button"><span class="toggle__up"></span></button>
+        <div class="container">
+          <h2 class="visually-hidden">Subscribe form</h2>
+          <p class="subscription__title">SUBSCRIBE TO STAY IN THE LOOP</p>
+          <form action="get" class="subscription__form">
+            <input class="subscription__mail" type="email" name="email" id="email-id">
+            <button class="subscription__btn" type="submit">Send</button>
+          </form>
+          <button class="subscription__toggle toggle toggle" type="button"><span class="toggle__up"></span></button>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
