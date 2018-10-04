@@ -8,8 +8,8 @@ var autoprefixer = require("autoprefixer");
 var minify = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
-// var webp = require("gulp-webp");
-// var svgstore = require("gulp-svgstore");
+var webp = require("gulp-webp");
+var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var htmlmin = require("gulp-htmlmin");
 var uglify = require("gulp-uglify");
@@ -33,6 +33,19 @@ gulp.task("style", function() {
     .pipe(server.stream());
 });
 
+// gulp.task("watch", function() {
+//   gulp.watch("source/less/**/*.less", ["less"])
+// });
+
+// gulp.task("server", function() {
+//   server.init({
+//     server: {
+//       baseDir: "source/"
+//     },
+//     notify: false
+//   })
+// });
+
 gulp.task("serve", function() {
   server.init({
     server: "source/",
@@ -42,7 +55,7 @@ gulp.task("serve", function() {
     ui: false
   });
 
-  gulp.watch("source/less/**/*.less", ["style"]);
+  gulp.watch("source/less/**/*.less", ["style"]).on("change", server.reload);
   gulp.watch("source/*.html", ["html"]).on("change", server.reload);
 });
 
