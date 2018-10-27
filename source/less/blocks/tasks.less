@@ -8,9 +8,15 @@
 .tasks__slogan {
   width: 500px;
   margin: 0 auto;
-  margin-bottom: 122px;
+  margin-bottom: 29px;
 
   text-align: center;
+}
+
+.tasks__arrow {
+  margin: 0 auto;
+  margin-bottom: 73px;
+  padding: 0;
 }
 
 .tasks__list {
@@ -28,13 +34,47 @@
   min-height: 400px;
 }
 
+.tasks__logo {
+  width: 160px;
+  height: 160px;
+  margin: 0 auto;
+  padding: 0;
+
+  &--design {
+    background: url("/img/laptop.png") center no-repeat;
+  }
+
+  &--dev {
+    background: url("/img/code.png") center no-repeat;
+  }
+
+  &--love {
+    background: url("/img/heart.png") center no-repeat;
+  }
+}
+
 .tasks__title {
+  position: relative;
+  margin-bottom: 58px;
+
   font-size: 15px;
   font-weight: 500;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
   color: #353535;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 33px;
+    height: 3px;
+    left: 50%;
+    bottom: -26px;
+    margin-left: -16px;
+
+    background-color: #3dc9b3;
+  }
 }
 
 .tasks__description {

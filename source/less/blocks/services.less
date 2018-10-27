@@ -6,6 +6,10 @@
   background-color: #f3f5f8;
 }
 
+.services__wrapper {
+  position: relative;
+}
+
 .services__list {
   display: flex;
   margin: 0;
@@ -22,7 +26,11 @@
   margin: 0;
   padding: 0;
 
-
+  &--template {
+    background-image: url("/img/iphone5mock.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 .services__item-wrapper {
@@ -38,7 +46,19 @@
 .services__slogan {
   width: 320px;
   margin: 0 auto;
-  margin-bottom: 83px;
+  margin-bottom: 31px;
+  margin-top: 134px;
+}
+
+.services__arrow {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  padding: 0;
+
+  &::before,
+  &::after {
+    width: 170px;
+  }
 }
 
 .services__text {
@@ -56,7 +76,11 @@
 }
 
 .services__slider {
-  margin-top: 132px;
+  position: absolute;
+  bottom: 100px;
+  right: 250px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 
