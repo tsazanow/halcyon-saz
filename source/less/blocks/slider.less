@@ -8,16 +8,30 @@
   padding: 0;
 }
 
-.slider__toggle {
-  width: 10px;
-  height: 10px;
+.slider__item input[type="radio"] {
+  display: none;
+}
 
-  border: 2px solid #c9cbca;
-  border-radius: 50%;
-  background-color: #fff;
+.slider__title {
+  position: relative;
+  font-size: 0;
 
-  &:hover,
-  &:active {
-    background-color: #212024;
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+
+    border: 2px solid #c9cbca;
+    border-radius: 50%;
+    background-color: #fff;
   }
 }
+
+.slider__toggle:checked ~ .slider__title::before {
+  background-color: #212024;
+}
+

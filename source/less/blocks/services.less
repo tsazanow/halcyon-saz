@@ -8,26 +8,38 @@
 
 .services__wrapper {
   position: relative;
+  // width: 100%;
+  overflow: hidden;
 }
 
 .services__list {
   display: flex;
+  flex-direction: row;
+  width: 2340px;
   margin: 0;
   padding: 0;
 
   list-style: none;
+
 }
 
 .services__item {
   display: flex;
   justify-content: flex-end;
-  width: 100%;
+  width: 1170px;
   height: 700px;
   margin: 0;
   padding: 0;
+  // transform: translateX(0);
 
-  &--template {
+  &--design {
     background-image: url("/img/iphone5mock.png");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--second {
+    background-image: url("/img/panorama-desktop@1x.jpg");
     background-position: center;
     background-repeat: no-repeat;
   }
@@ -82,5 +94,12 @@
   margin: 0 auto;
   padding: 0;
 }
+
+#service-2:checked .services__item {
+  width: 0;
+  // transform: translateX(-3400px);
+  transition: width 2s ease-in 0s;
+}
+
 
 
