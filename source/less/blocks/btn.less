@@ -2,8 +2,19 @@
   width: 200px;
   height: 57px;
 
+  cursor: pointer;
   background-color: #3dc9b3;
   border: none;
   border-bottom: 3px solid #309383;
   border-radius: 3px;
+
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.7;
+    border-bottom: none;
+  }
 }

@@ -94,7 +94,7 @@
           <div class="services__slider slider">
             <div class="slider__item">
               <input class="slider__toggle" type="radio" id="service-1" name="service" checked>
-              <label class="slider__title" for="service-1">Template</label>
+              <label class="slider__title" for="service-1">Design</label>
             </div>
             <div class="slider__item">
               <input class="slider__toggle" type="radio" id="service-2" name="service">
@@ -110,8 +110,15 @@
       <section class="banner-counter">
         <div class="banner-counter__wrapper container">
           <p class="banner-counter__title-big">I GOT 99 PROBLEMS</p>
-          <p class="banner-counter__title-small">BUT<b class="banner-counter__title-separate">DESIGN</b>‘AINT ONE</p>
-          <button class="banner-counter__toggle toggle" type="button"><span class="toggle__down"></span></button>
+          <p class="banner-counter__title-small">
+            BUT<b class="banner-counter__title-separate">DESIGN</b>‘AINT ONE
+          </p>
+          <button class="banner-counter__toggle toggle" type="button">
+            <svg class="toggle__down" width="17" height="11">
+              <title>Развернуть</title>
+              <use xlink:href="img/sprite.svg#toggle-down"></use>
+            </svg>
+          </button>
         </div>
       </section>
       <section class="portfolio container">
@@ -136,14 +143,23 @@
             adipiscing libero.</p>
           </li>
         </ul>
-        <div class="portfolio__slider slider">
-          <div class="slider__item"></div>
-          <div class="slider__item"></div>
-          <div class="slider__item"></div>
+        <div class="potfolio__slider slider">
+          <div class="slider__item">
+            <input class="slider__toggle" type="radio" id="portfolio-1" name="portfolio" checked>
+            <label class="slider__title" for="portfolio-1">Creative minds</label>
+          </div>
+          <div class="slider__item">
+            <input class="slider__toggle" type="radio" id="portfolio-2" name="portfolio">
+            <label class="slider__title" for="portfolio-2">Think alike</label>
+          </div>
+          <div class="slider__item">
+            <input class="slider__toggle" type="radio" id="portfolio-3" name="portfolio">
+            <label class="slider__title" for="portfolio-3">Pixel perfection</label>
+          </div>
         </div>
       </section>
       <section class="banner-ignite">
-        <div class="container">
+        <div class="banner-ignite__wrapper container">
           <p class="banner-ignite__title">IGNITE YOUR PASSION</p>
         </div>
       </section>
