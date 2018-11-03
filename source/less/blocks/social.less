@@ -11,12 +11,29 @@
 }
 
 .social__item {
+  position: relative;
   width: 40px;
-  height: 41px;
+  height: 40px;
+
+  font-size: 0;
+  text-align: center;
 
   background-color: #000;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: #3dc9b3;
+  }
 }
 
 .social__logo {
-  font-size: 0;
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  margin-left: -9px;
+  margin-top: -9px;
+
+  fill: #fff;
 }
