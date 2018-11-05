@@ -16,9 +16,8 @@
     <header class="page-header">
       <div class="container">
         <nav class="main-nav">
-          <button class="main-nav__btn">
-            <svg class="main-nav__btn-logo" width="27" height="22">
-              <title>Открыть меню</title>
+          <button class="main-nav__btn" type="button" title="Navigation">
+            <svg class="main-nav__btn-logo" width="27" height="22" aria-hidden="true">
               <use xlink:href="img/sprite.svg#bars"></use>
             </svg>
           </button>
@@ -70,7 +69,6 @@
       <section class="services">
         <h2 class="visually-hidden">Our services</h2>
         <div class="services__wrapper container">
-
           <ul class="services__list">
             <li class="services__item services__item--design">
               <div class="services__item-wrapper">
@@ -113,9 +111,8 @@
           <p class="banner-counter__title-small">
             BUT<b class="banner-counter__title-separate">DESIGN</b>‘AINT ONE
           </p>
-          <button class="banner-counter__toggle toggle" type="button">
+          <button class="banner-counter__toggle toggle" type="button" title="Open">
             <svg class="toggle__down" width="17" height="11">
-              <title>Развернуть</title>
               <use xlink:href="img/sprite.svg#toggle-down"></use>
             </svg>
           </button>
@@ -176,26 +173,29 @@
             <p class="team__item-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non
               adipiscing libero.
             </p>
-            <div class="team__social social">
-              <a class="social__item" href="#" aria-label="Web-site">Web-site
-                <svg class="social__logo" width="15" height="15" role="img">
-                  <title>Web-site</title>
-                  <use xlink:href="img/sprite.svg#icon-web"></use>
-                </svg>
-              </a>
-              <a class="social__item" href="https://twitter.com" aria-label="Twitter">Twitter
-                <svg class="social__logo" width="19" height="15" role="img">
-                  <title>Twitter</title>
-                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-              <a class="social__item" href="#" aria-label="e-mail">E-mail
-                <svg class="social__logo" width="19" height="15" role="img">
-                  <title>E-mail</title>
-                  <use xlink:href="img/sprite.svg#icon-mail"></use>
-                </svg>
-              </a>
-            </div>
+            <ul class="team__social social">
+              <li class="social__item">
+                <a class="social__link" href="#" title="Web-site">
+                  <svg width="15" height="15" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-web"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="https://twitter.com" title="Twitter">
+                  <svg width="19" height="15" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" title="e-mail">
+                  <svg width="19" height="15" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-mail"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </li>
           <li class="team__item">
             <p class="team__avatar">
@@ -205,26 +205,29 @@
             <p class="team__item-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non
               adipiscing libero.
             </p>
-            <div class="team__social social">
-              <a class="social__item" href="#" aria-label="Web-site">Web-site
-                <svg class="social__logo" width="15" height="15" role="img">
-                  <title>Web-site</title>
-                  <use xlink:href="img/sprite.svg#icon-web"></use>
-                </svg>
-              </a>
-              <a class="social__item" href="https://twitter.com" aria-label="Twitter">Twitter
-                <svg class="social__logo" width="19" height="15" role="img">
-                  <title>Twitter</title>
-                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-              <a class="social__item" href="#" aria-label="e-mail">E-mail
-                <svg class="social__logo" width="19" height="15" role="img">
-                  <title>E-mail</title>
-                  <use xlink:href="img/sprite.svg#icon-mail"></use>
-                </svg>
-              </a>
-            </div>
+            <ul class="team__social social">
+              <li class="social__item">
+                <a class="social__link" href="#" title="Web-site">
+                  <svg width="15" height="15" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-web"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="https://twitter.com" title="Twitter">
+                  <svg width="19" height="15" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" title="e-mail">
+                  <svg width="19" height="15" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-mail"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </li>
           <li class="team__item">
             <p class="team__avatar">
@@ -234,26 +237,29 @@
             <p class="team__item-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non
               adipiscing libero.
             </p>
-            <div class="team__social social">
-              <a class="social__item" href="#" aria-label="Web-site">Web-site
-                <svg class="social__logo" width="15" height="15" role="img">
-                  <title>Web-site</title>
-                  <use xlink:href="img/sprite.svg#icon-web"></use>
-                </svg>
-              </a>
-              <a class="social__item" href="https://twitter.com" aria-label="Twitter">Twitter
-                <svg class="social__logo" width="19" height="15" role="img">
-                  <title>Twitter</title>
-                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-              <a class="social__item" href="#" aria-label="e-mail">E-mail
-                <svg class="social__logo" width="19" height="15" role="img">
-                  <title>E-mail</title>
-                  <use xlink:href="img/sprite.svg#icon-mail"></use>
-                </svg>
-              </a>
-            </div>
+            <ul class="team__social social">
+              <li class="social__item">
+                <a class="social__link" href="#" title="Web-site">
+                  <svg width="15" height="15" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-web"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="https://twitter.com" title="Twitter">
+                  <svg width="19" height="15" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a class="social__link" href="#" title="e-mail">
+                  <svg width="19" height="15" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-mail"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </li>
         </ul>
         <div class="team__slider slider">
@@ -272,14 +278,18 @@
         </div>
       </section>
       <section class="subscription">
-        <div class="container">
+        <div class="subscription__wrapper container">
           <h2 class="visually-hidden">Subscribe form</h2>
           <p class="subscription__title">SUBSCRIBE TO STAY IN THE LOOP</p>
           <form action="get" class="subscription__form">
             <input class="subscription__mail" type="email" name="email" id="email-id">
             <button class="subscription__btn" type="submit">Send</button>
           </form>
-          <button class="subscription__toggle toggle toggle" type="button"><span class="toggle__up"></span></button>
+          <button class="subscription__toggle toggle toggle--close" type="button" title="Close">
+            <svg class="toggle__up" width="17" height="10">
+              <use xlink:href="img/sprite.svg#toggle-up"></use>
+            </svg>
+          </button>
         </div>
       </section>
     </main>
@@ -307,26 +317,29 @@
               </p>
             </li>
           </ul>
-          <div class="contacts__social social">
-            <a class="social__item" href="#" aria-label="Web-site">Web-site
-              <svg class="social__logo" width="15" height="15" role="img">
-                <title>Web-site</title>
-                <use xlink:href="img/sprite.svg#icon-web"></use>
-              </svg>
-            </a>
-            <a class="social__item" href="https://twitter.com" aria-label="Twitter">Twitter
-              <svg class="social__logo" width="19" height="15" role="img">
-                <title>Twitter</title>
-                <use xlink:href="img/sprite.svg#icon-twitter"></use>
-              </svg>
-            </a>
-            <a class="social__item" href="#" aria-label="e-mail">E-mail
-              <svg class="social__logo" width="19" height="15" role="img">
-                <title>E-mail</title>
-                <use xlink:href="img/sprite.svg#icon-mail"></use>
-              </svg>
-            </a>
-          </div>
+          <ul class="contacts__social social">
+            <li class="social__item">
+              <a class="social__link" href="#" title="Web-site">
+                <svg width="15" height="15" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-web"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="https://twitter.com" title="Twitter">
+                <svg width="19" height="15" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" title="e-mail">
+                <svg width="19" height="15" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#icon-mail"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="additions">
