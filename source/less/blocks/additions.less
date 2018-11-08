@@ -11,13 +11,40 @@
   width: 300px;
   height: 121px;
   margin: 0;
+  padding: 0;
 
   list-style: none;
 }
 
 .additions__item {
+  position: relative;
   width: 160px;
 
+  &::after {
+    position: absolute;
+    content: "|";
+    width: 10px;
+    height: 15px;
+    top: 0;
+    right: 0;
+
+    font-family: @second-font;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #a1a9b0;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+.additions__item:last-child {
+  &::after {
+   display: none;
+  }
 }
 
 .additions__item-title {
