@@ -66,45 +66,41 @@
           </li>
         </ul>
       </section>
+
       <section class="services">
         <h2 class="visually-hidden">Our services</h2>
         <div class="services__wrapper container">
-          <ul class="services__list">
-            <li class="services__item services__item--design">
-              <div class="services__item-wrapper">
+          <input type="radio" id="slide-1" name="service" checked>
+          <input type="radio" id="slide-2" name="service">
+          <input type="radio" id="slide-3" name="service">
+          <div class="services__controls controls">
+            <label class="controls__title services__control" for="slide-1">Slide-1</label>
+            <label class="controls__title services__control" for="slide-2">Slide-2</label>
+            <label class="controls__title services__control" for="slide-3">Slide-3</label>
+          </div>
+          <div class="services__slides">
+            <div class="services__slide services__slide--first">
+              <!-- <div class="services__slide-wrapper">
                 <p class="services__slogan slogan">RESPONSIVE DESIGN SPECIALIST</p>
                 <div class="services__arrow arrow"></div>
                 <p class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
                 <p class="services__text">Mauris ultrices odio vitae nulla ultrices iaculis. Nulla rhoncus odio eu lectus faucibus facilisis. Maecenas ornare augue vitae sollicitudin accumsan.</p>
-                <p class="services__text">Etiam eget libero et erat eleifend consectetur a nec lectus. Sed id tellus lorem.Suspendisse sed venenatis odio, quis lobortis eros.</p>
-              </div>
-            </li>
-            <li class="services__item services__item--second">
-              <div class="services__item-wrapper">
+                <p class="services__text">Etiam eget libero et erat eleifend consectetur a nec lectus. Sed id tellus lorem. Suspendisse sed venenatis odio, quis lobortis eros.</p>
+              </div> -->
+            </div>
+            <div class="services__slide services__slide--second">
+              <!-- <div class="services__slide-wrapper">
                 <p class="services__slogan slogan">SECOND SLIDE</p>
                 <div class="services__arrow arrow"></div>
                 <p class="services__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non adipiscing libero.</p>
                 <p class="services__text">Mauris ultrices odio vitae nulla ultrices iaculis. Nulla rhoncus odio eu lectus faucibus facilisis. Maecenas ornare augue vitae sollicitudin accumsan.</p>
                 <p class="services__text">Etiam eget libero et erat eleifend consectetur a nec lectus. Sed id tellus lorem.Suspendisse sed venenatis odio, quis lobortis eros.</p>
-              </div>
-            </li>
-          </ul>
-          <div class="services__slider slider">
-            <div class="slider__item">
-              <input class="slider__toggle" type="radio" id="service-1" name="service" checked>
-              <label class="slider__title" for="service-1">Design</label>
-            </div>
-            <div class="slider__item">
-              <input class="slider__toggle" type="radio" id="service-2" name="service">
-              <label class="slider__title" for="service-2">Slide-2</label>
-            </div>
-            <div class="slider__item">
-              <input class="slider__toggle" type="radio" id="service-3" name="service">
-              <label class="slider__title" for="service-3">Slide-3</label>
+              </div> -->
             </div>
           </div>
         </div>
       </section>
+
       <section class="banner-counter">
         <div class="banner-counter__wrapper container">
           <p class="banner-counter__title-big">I GOT 99 PROBLEMS</p>
@@ -140,18 +136,18 @@
             adipiscing libero.</p>
           </li>
         </ul>
-        <div class="portfolio__slider slider">
-          <div class="slider__item">
-            <input class="slider__toggle" type="radio" id="portfolio-1" name="portfolio" checked>
-            <label class="slider__title" for="portfolio-1">Portfolio-1</label>
+        <div class="portfolio__controls controls">
+          <div class="controls__item">
+            <input class="controls__toggle" type="radio" id="portfolio-1" name="portfolio" checked>
+            <label class="controls__title" for="portfolio-1">Portfolio-1</label>
           </div>
-          <div class="slider__item">
-            <input class="slider__toggle" type="radio" id="portfolio-2" name="portfolio">
-            <label class="slider__title" for="portfolio-2">Portfolio-2</label>
+          <div class="controls__item">
+            <input class="controls__toggle" type="radio" id="portfolio-2" name="portfolio">
+            <label class="controls__title" for="portfolio-2">Portfolio-2</label>
           </div>
-          <div class="slider__item">
-            <input class="slider__toggle" type="radio" id="portfolio-3" name="portfolio">
-            <label class="slider__title" for="portfolio-3">Portfolio-3</label>
+          <div class="controls__item">
+            <input class="controls__toggle" type="radio" id="portfolio-3" name="portfolio">
+            <label class="controls__title" for="portfolio-3">Portfolio-3</label>
           </div>
         </div>
       </section>
@@ -262,18 +258,18 @@
             </ul>
           </li>
         </ul>
-        <div class="team__slider slider">
-          <div class="slider__item">
-            <input class="slider__toggle" type="radio" id="team-1" name="team" checked>
-            <label class="slider__title" for="team-1">Team-1</label>
+        <div class="team__controls controls">
+          <div class="controls__item">
+            <input class="controls__toggle" type="radio" id="team-1" name="team" checked>
+            <label class="controls__title" for="team-1">Team-1</label>
           </div>
-          <div class="slider__item">
-            <input class="slider__toggle" type="radio" id="team-2" name="team">
-            <label class="slider__title" for="team-2">Team-2</label>
+          <div class="controls__item">
+            <input class="controls__toggle" type="radio" id="team-2" name="team">
+            <label class="controls__title" for="team-2">Team-2</label>
           </div>
-          <div class="slider__item">
-            <input class="slider__toggle" type="radio" id="team-3" name="team">
-            <label class="slider__title" for="team-3">Team-3</label>
+          <div class="controls__item">
+            <input class="controls__toggle" type="radio" id="team-3" name="team">
+            <label class="controls__title" for="team-3">Team-3</label>
           </div>
         </div>
       </section>

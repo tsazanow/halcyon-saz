@@ -1,40 +1,47 @@
 .services {
+  position: relative;
   width: 100%;
   height: 700px;
   margin: 0 auto;
 
-  background-color: #f3f5f8;
+  // background: linear-gradient(to right, #f3f5f8 0%, #f3f5f8 50%, #fff 50%, #fff 100%);
 }
 
 .services__wrapper {
   position: relative;
+  // display: flex;
+  // flex-direction: row;
+  width: 1170px;
+  height: 700px;
   // width: 100%;
+  margin: 0 auto;
+  padding: 0;
+
   overflow: hidden;
 }
 
-.services__list {
+.services__slides {
   display: flex;
   flex-direction: row;
   width: 2340px;
   margin: 0;
   padding: 0;
-
-  list-style: none;
-
 }
 
-.services__item {
+.services__slide {
   display: flex;
   justify-content: flex-end;
+
   width: 1170px;
   height: 700px;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
-  // transform: translateX(0);
 
-  &--design {
+  transition: transform 0.8s ease;
+
+  &--first {
     background-image: url("/img/iphone5mock.png");
-    background-position: center;
+    background-position: -231px 5px;
     background-repeat: no-repeat;
   }
 
@@ -45,28 +52,31 @@
   }
 }
 
-.services__item-wrapper {
-  display: flex;
-  flex-direction: column;
-  width: 555px;
-  height: 700px;
-  margin-right: 0;
-  padding-right: 30px;
+// .services__slide-wrapper {
+//   box-sizing: border-box;
+//   display: flex;
+//   flex-direction: column;
+//   width: 555px;
+//   height: 700px;
+//   margin-right: 0;
+//   padding-right: 30px;
 
-  background-color: #fff;
-}
+//   background-color: #fff;
+// }
 
 .services__slogan {
   width: 325px;
   margin: 0 auto;
   margin-bottom: 23px;
   margin-top: 132px;
+  margin-left: 165px;
 
   text-align: center;
 }
 
 .services__arrow {
   margin-bottom: 39px;
+  margin-left: 320px;
 
   &::before,
   &::after {
@@ -76,7 +86,7 @@
 
 .services__text {
   align-self: flex-end;
-  width: 455px;
+  width: 462px;
   margin: 0;
   margin-bottom: 19px;
   padding: 0;
@@ -85,24 +95,33 @@
   font-size: 14px;
   line-height: 20px;
   font-weight: 500;
-  text-align: left;
+  text-align: justify;
 
   color: #8c9398;
 }
 
-.services__slider {
+.services__controls {
   position: absolute;
-  bottom: 100px;
-  right: 250px;
+  bottom: 131px;
+  right: 574px;
   margin: 0 auto;
   padding: 0;
 }
 
-input[checked] ~ .services__item {
-  width: 0;
-  // transform: translateX(-3400px);
-  transition: width 2s ease-in 0s;
+// input[type="radio"]:checked ~ .services__controls > label:hover::before,
+// .services__controls > label:focus::before {
+//   background-color: #212024;
+// }
+
+// #slide-1:checked .services__controls label::before {
+//   background-color: #212024;
+// }
+
+#slide-1:checked ~ .services__slides > .services__slide--first {
+  transform: translate(0);
 }
 
-
+#slide-2:checked ~ .services__slides > .services__slide--second {
+  transform: translate(-1170px);
+}
 

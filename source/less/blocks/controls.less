@@ -1,4 +1,4 @@
-.slider {
+.controls {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -8,13 +8,11 @@
   padding: 0;
 }
 
-.slider__item input[type="radio"] {
-  display: none;
-}
-
-.slider__title {
+.controls__title {
   position: relative;
   font-size: 0;
+
+  z-index: 100;
 
   &::before {
     position: absolute;
@@ -33,7 +31,10 @@
   }
 }
 
-.slider__toggle:checked ~ .slider__title::before {
+.controls__title::before:checked {
   background-color: #212024;
 }
+
+
+
 
