@@ -14,7 +14,7 @@
 
   z-index: 100;
 
-  &::before {
+  &::after {
     position: absolute;
     content: "";
     top: 0;
@@ -27,13 +27,19 @@
 
     border: 2px solid #c9cbca;
     border-radius: 50%;
-    background-color: #fff;
   }
 }
 
-.controls__title::before:checked {
-  background-color: #212024;
+.controls .controls__title:hover::after,
+input:nth-of-type(1):checked ~ .controls .controls__title:nth-of-type(1)::after,
+input:nth-of-type(2):checked ~ .controls .controls__title:nth-of-type(2)::after,
+input:nth-of-type(3):checked ~ .controls .controls__title:nth-of-type(3)::after,
+input:nth-of-type(4):checked ~ .controls .controls__title:nth-of-type(4)::after,
+input:nth-of-type(5):checked ~ .controls .controls__title:nth-of-type(5)::after {
+	background: #212024;
 }
+
+
 
 
 
