@@ -20,7 +20,7 @@
 .services__slides {
   display: flex;
   flex-direction: row;
-  width: 2340px;
+  width: 3510px;
   margin: 0;
   padding: 0;
 }
@@ -43,6 +43,12 @@
   }
 
   &--second {
+    background-image: url("/img/iphone5mock.png");
+    background-position: -214px 0;
+    background-repeat: no-repeat;
+  }
+
+  &--third {
     background-image: url("/img/iphone5mock.png");
     background-position: -214px 0;
     background-repeat: no-repeat;
@@ -100,7 +106,7 @@
 .services__controls {
   position: absolute;
   bottom: 125px;
-  right: 207px;
+  right: 211px;
   margin: 0 auto;
   padding: 0;
 }
@@ -111,5 +117,9 @@
 
 #slide-2:checked ~ .services__slides > .services__slide--second {
   transform: translate(-1170px);
+}
+
+#slide-3:checked ~ .services__slides > .services__slide--third {
+  transform: translate(-2340px);
 }
 
