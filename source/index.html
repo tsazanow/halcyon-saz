@@ -5,9 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halcyon</title>
     <link href="css/style.css" rel="stylesheet">
-    <!-- <link href="fonts/FontAwesome/fa-regular-400.woff2" rel="preload" as="font">
-    <link href="fonts/FontAwesome/fa-solid-900.woff2" rel="preload" as="font">
-    <link href="fonts/FontAwesome/fa-brands-400.woff2" rel="preload" as="font"> -->
     <link href="fonts/GothamRounded-Medium.woff2" rel="preload" as="font">
     <link href="fonts/GothamRounded-Book.woff2" rel="preload" as="font">
     <link href="fonts/GothamRounded-MediumItalic.woff2" rel="preload" as="font">
@@ -139,21 +136,33 @@
         </div>
         <ul class="portfolio__list">
           <li class="portfolio__item">
-            <img src="img/item1.png" width="363" height="203" alt="Creative minds">
+            <div class="portfolio__image">
+              <div class="portfolio__overlay"></div>
+              <img src="img/item1.png" width="363" height="203" alt="Creative minds">
+            </div>
             <p class="portfolio__item-title">Creative minds</p>
-            <p class="portfolio__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.&nbsp; Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non
+            <p class="portfolio__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.&nbsp; Nunc&nbsp; ultricies&nbsp; nulla&nbsp; non&nbsp;
+            metus&nbsp;&nbsp; pulvinar &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;imperdiet. Praesent non
             adipiscing libero.</p>
           </li>
           <li class="portfolio__item">
-            <img src="img/item2.png" width="364" height="203" alt="Think alike">
+            <div class="portfolio__image">
+              <div class="portfolio__overlay"></div>
+              <img src="img/item2.png" width="364" height="203" alt="Think alike">
+            </div>
             <p class="portfolio__item-title">Think alike</p>
-            <p class="portfolio__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non
+            <p class="portfolio__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.&nbsp; Nunc&nbsp; ultricies&nbsp; nulla&nbsp; non&nbsp;
+            metus&nbsp;&nbsp; pulvinar &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;imperdiet. Praesent non
             adipiscing libero.</p>
           </li>
           <li class="portfolio__item">
-            <img src="img/item3.png" width="362" height="203" alt="Pixel perfection">
+            <div class="portfolio__image">
+              <div class="portfolio__overlay"></div>
+              <img src="img/item3.png" width="362" height="203" alt="Pixel perfection">
+            </div>
             <p class="portfolio__item-title">Pixel perfection</p>
-            <p class="portfolio__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non
+            <p class="portfolio__item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.&nbsp; Nunc&nbsp; ultricies&nbsp; nulla&nbsp; non&nbsp;
+            metus&nbsp;&nbsp; pulvinar &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;imperdiet. Praesent non
             adipiscing libero.</p>
           </li>
         </ul>
@@ -183,7 +192,7 @@
               <img src="img/jonsnow.png" width="202" height="220" alt="Jon Snow">
             </p>
             <p class="team__item-person">Jon Snow</p>
-            <p class="team__item-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non
+            <p class="team__item-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit.&nbsp; Nunc&nbsp; ultricies&nbsp; nulla&nbsp; non&nbsp; metus&nbsp;&nbsp; pulvinar &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;imperdiet. Praesent non
               adipiscing libero.
             </p>
             <ul class="team__social social">
@@ -215,8 +224,9 @@
               <img src="img/cersei.png" width="202" height="220" alt="Cersei Lannister">
             </p>
             <p class="team__item-person">Cersei Lannister</p>
-            <p class="team__item-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non
-              adipiscing libero.
+            <p class="team__item-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit.&nbsp; Nunc&nbsp; ultricies&nbsp; nulla&nbsp; non&nbsp;
+            metus&nbsp;&nbsp; pulvinar &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;imperdiet. Praesent non
+            adipiscing libero.
             </p>
             <ul class="team__social social">
               <li class="social__item">
@@ -247,8 +257,9 @@
               <img src="img/jamie.png" width="202" height="220" alt="Jamie Lannister">
             </p>
             <p class="team__item-person">Jamie Lannister</p>
-            <p class="team__item-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultricies nulla non metus pulvinar imperdiet. Praesent non
-              adipiscing libero.
+            <p class="team__item-about">Lorem ipsum dolor sit amet, consectetur adipiscing elit.&nbsp; Nunc&nbsp; ultricies&nbsp; nulla&nbsp; non&nbsp;
+            metus&nbsp;&nbsp; pulvinar &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;imperdiet. Praesent non
+            adipiscing libero.
             </p>
             <ul class="team__social social">
               <li class="social__item">
@@ -293,6 +304,7 @@
         </div>
       </section>
     </main>
+
     <footer class="page-footer">
       <section class="contacts">
         <div class="container">
@@ -302,7 +314,9 @@
           <ul class="contacts__list">
             <li class="contacts__item">
               <p class="contacts__item-title contacts__item-title--address">ADDRESS</p>
-              <p class="contacts__item-text">Level 6, 23 Pitt St, Sydney</p>
+              <p class="contacts__item-text">
+                <a href="https://goo.gl/maps/JEeHFB5SNgy" class="contacts__address">Level 6, 23 Pitt St, Sydney</a>
+              </p>
             </li>
             <li class="contacts__item">
               <p class="contacts__item-title contacts__item-title--phone">PHONE</p>
@@ -318,21 +332,21 @@
             </li>
           </ul>
           <ul class="contacts__social social">
-            <li class="social__item">
+            <li class="social__item social__item--contacts">
               <a class="social__link" href="#" title="Web-site">
                 <svg width="15" height="15" aria-hidden="true">
                   <use xlink:href="img/sprite.svg#icon-web"></use>
                 </svg>
               </a>
             </li>
-            <li class="social__item">
+            <li class="social__item social__item--contacts">
               <a class="social__link" href="https://twitter.com" title="Twitter">
                 <svg width="19" height="15" aria-hidden="true">
                   <use xlink:href="img/sprite.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="social__item">
+            <li class="social__item social__item--contacts">
               <a class="social__link" href="#" title="e-mail">
                 <svg width="19" height="15" aria-hidden="true">
                   <use xlink:href="img/sprite.svg#icon-mail"></use>
@@ -342,6 +356,7 @@
           </ul>
         </div>
       </section>
+
       <section class="additions">
         <div class="container">
           <ul class="additions__list">
