@@ -68,6 +68,11 @@
   border: 1px solid #ffffff;
 }
 
+.subscription__mail:hover,
+.subscription__mail:focus {
+  border: 1px solid #3DC9B3;
+}
+
 .subscription__btn {
   width: 97px;
   height: 65px;
@@ -81,9 +86,19 @@
   color: #ffffff;
   text-transform: uppercase;
 
-  border: 1px solid #3dc9b3;
-  background-color: #3dc9b3;
+  border: 1px solid rgb(61,201,179);
+  background-color: rgb(61,201,179);
   cursor: pointer;
+}
+
+.subscription__btn:hover {
+  border: 1px solid rgba(61,201,179,1);
+  background-color: rgba(61,201,179,0.7);
+}
+
+.subscription__btn:active {
+  border: 1px solid rgba(61,201,179,1);
+  background-color: rgba(61,201,179,0.3);
 }
 
 .subscription__toggle {
