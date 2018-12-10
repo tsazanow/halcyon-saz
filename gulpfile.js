@@ -8,8 +8,8 @@ var autoprefixer = require("autoprefixer");
 var minify = require("gulp-csso");
 var rename = require("gulp-rename");
 var imagemin = require("gulp-imagemin");
-var webp = require("gulp-webp");
-var svgstore = require("gulp-svgstore");
+// var webp = require("gulp-webp");
+// var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var htmlmin = require("gulp-htmlmin");
 var uglify = require("gulp-uglify");
@@ -26,25 +26,12 @@ gulp.task("style", function() {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("source/css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
-
-// gulp.task("watch", function() {
-//   gulp.watch("source/less/**/*.less", ["less"])
-// });
-
-// gulp.task("server", function() {
-//   server.init({
-//     server: {
-//       baseDir: "source/"
-//     },
-//     notify: false
-//   })
-// });
 
 gulp.task("serve", function() {
   server.init({
@@ -60,7 +47,7 @@ gulp.task("serve", function() {
 });
 
 gulp.task("images", function() {
-  return gulp.src(["source/img/**/*.{png,jpg,svg}", "!source/img/sprite.svg"])
+  return gulp.src(["source/img/**/*.{png,jpg,svg}", "source/pict/**/*.{png,jpg,svg}", "!source/img/sprite.svg"])
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
       imagemin.jpegtran({progressive: true}),
@@ -69,11 +56,11 @@ gulp.task("images", function() {
     .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("webp", function() {
-  return gulp.src("build/img/**/*.{png,jpg}")
-    .pipe(webp({quality: 90}))
-    .pipe(gulp.dest("build/img"));
-});
+// gulp.task("webp", function() {
+//   return gulp.src("build/img/**/*.{png,jpg}")
+//     .pipe(webp({quality: 90}))
+//     .pipe(gulp.dest("build/img"));
+// });
 
 // gulp.task("sprite", function() {
 //   return gulp.src("source/img/sp-*.svg")
@@ -113,7 +100,7 @@ gulp.task("build", function(done) {
     "style",
     "compress",
     "images",
-    "webp",
+    // "webp",
     // "sprite",
     "html",
      done
@@ -124,6 +111,7 @@ gulp.task("copy", function() {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
+    "source/pict/**",
     "source/js/**",
   ], {
     base: "source"
