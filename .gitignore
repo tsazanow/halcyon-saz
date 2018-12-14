@@ -1,7 +1,6 @@
 # halcyon-saz
 .DS_Store
 .idea
-.editorconfig
 *.ai
 *.log
 *.pdf
