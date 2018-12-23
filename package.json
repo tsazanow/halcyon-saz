@@ -1,5 +1,6 @@
 {
   "name": "halcyon",
+  "private": true,
   "version": "1.0.0",
   "description": "landing page Halcyon(portfolio)",
   "main": "index.js",
@@ -13,10 +14,10 @@
   "author": "Sazanov Artem",
   "license": "ISC",
   "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "^1.0.0",
+    "@htmlacademy/editorconfig-cli": "^1.x",
     "autoprefixer": "^9.0.1",
-    "browser-sync": "^2.24.6",
-    "gulp": "^3.9.1",
+    "browser-sync": "2.26.3",
+    "gulp": "3.9.1",
     "gulp-csso": "^3.0.1",
     "gulp-htmlmin": "^4.0.0",
     "gulp-imagemin": "^4.1.0",
@@ -42,5 +43,8 @@
     "source/js/**/*.js",
     "source/img/**/*.svg",
     "source/less/**/*.less"
-  ]
+  ],
+  "dependencies": {
+    "natives": "^1.1.6"
+  }
 }
