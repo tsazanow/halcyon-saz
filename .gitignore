@@ -7,6 +7,7 @@
 *.psd
 *.sublime*
 prepros-6.config
+.vscode/
 node_modules/
 build/
 npm-debug.*
